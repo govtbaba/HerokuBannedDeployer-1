@@ -17,24 +17,38 @@
       "required": false
     },
     "REPO_URL": {
-      "description": "URL of the REPO that you want to deploy.",
+      "description": "https://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@github.com/govtbaba/Frwdit-V222.git",
+      "value": ""
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org or @UseTGSBot",
       "value": ""
     },
-    "PYTHON_FILE": {
-      "description": "Name of the python file that you need to run. [use -m if you need to run __main__.py from a folder]",
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org or @UseTGSBot",
       "value": ""
     },
-     "OTHER_CMD": {
-      "description": "If you need to run any bash command other than python specify here",
-      "value": "None",
+    "BOT_TOKEN": {
+      "description": "Your bot token from @BotFather",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Enter Your Telegram id",
+      "value": ""
+    },
+    "CAPTION": {
+      "description": "If you want to add a caption to the forwarded file, enter it here",
       "required": false
+    },
+    "FILTER_TYPE": {
+      "description": "Type Of filters (document , audio , photo , video , animation)",
+      "value": "empty"
+    },
+    "SESSION": {
+      "description": "Pyrogram string Seccion - https://replit.com/@JijinR/PyroSessionString?v=1",
+      "value": ""
     }
   },
-  "addons": [
-  ],
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
   "formation": {
     "worker": {
       "quantity": 1,
